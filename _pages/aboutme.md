@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-permalink: /about/
+permalink: /aboutme/
 date: 2023-04-6
 ---
 <br>
