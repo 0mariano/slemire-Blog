@@ -37,7 +37,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "dark" # "light" (default), 
+    colorscheme          : "default" # "dark" # "light" (default), 
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
