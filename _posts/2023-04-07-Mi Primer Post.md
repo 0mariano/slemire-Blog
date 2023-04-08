@@ -1,15 +1,15 @@
 ---
 layout: single
-title: TCP bind shellcode
-date: 2018-11-18
+title: Mi Primer Post
+date: 2023-04-07
 classes: wide
 header:
-  teaser: /assets/images/slae32.png
+  teaser: /assets/images/masthead.png
 categories:
-  - slae
-  - infosec
+  - Pentesting
+  - CTFs
 tags:
-  - slae
-  - assembly
-  - tcp bind shellcode
+  - CyberSecurity
+  - HackTheBox
+  - HTB
 ---
