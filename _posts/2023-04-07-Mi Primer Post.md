@@ -14,3 +14,5 @@ tags:
   - HackTheBox
   - HTB
 ---
+
+![](/assets/images/masthead.png)
