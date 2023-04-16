@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/maa.png
   teaser_home_page: true
 categories:
-  - Post 1
+  - Post_1
 tags:
   - PWD!
   - TROLL
@@ -23,4 +23,4 @@ Ni idea de que poner aca pero te fuiste re PWDNEADO , OMG.
 
 Na mentira para que tengas una idea voy a publicar **Write-Up de HackTheBOX**
 
-Chau.
+Chau
