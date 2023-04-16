@@ -22,4 +22,4 @@ Ni idea de que poner aca pero te fuiste re PWDNEADO , OMG.
 
 Na mentira para que tengas una idea voy a publicar **Write-Up de HackTheBOX**. 
 
-Chau.
+Chau..
