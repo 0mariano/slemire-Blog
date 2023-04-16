@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Mi **Fucking** primer **Post**, OMG!!!
-excerpt: Ni idea que escribir aca, pero PWNEADO!
+excerpt: Ni idea que escribir aca, pero **PWNEADO!**
 date: 2023-04-16
 classes: wide
 header:
