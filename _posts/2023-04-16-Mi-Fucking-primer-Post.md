@@ -1,6 +1,13 @@
 ---
 layout: single
-title: Mi **Fucking** primer **Post**, OMG!!!
+title: Mi Fucking primer Post, OMG!!!
+excerpt:**PWNED!** 
+
+Ni idea de que poner aca pero te fuiste re PWDNEADO , OMG.
+
+Na mentira para que tengas una idea voy a publicar **Write-Up de HackTheBOX**. 
+
+Chau..
 date: 2023-04-16
 classes: wide
 header:
