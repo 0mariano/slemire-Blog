@@ -20,29 +20,15 @@ tags:
 ---
 
 ![](/assets/images/HTB/writeup-squashed/Squashed.png)
-
-***
-
-
-**INDICE**
-
-1. [Introducción](#Introducción)
-2. [Reconocimiento](#reconocimiento).
-    * [Reconocimiento de Puertos](#recon-nmap).
-3. [Puertos](#Puerto2049).
-4. [Escalada de Privilegios .Xauthority](☣️). 
-
-
     
-***
+    
+    
+    
+    
+## Introducción 
 
 
-## Introducción {#Sección-1}
-
-
-"En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario."
-
-
+En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario.
 
 
 
@@ -181,7 +167,7 @@ export SHELL=bash
 
 
 
-# Escalada de Privilegios .Xauthority ☣️
+## Escalada de Privilegios .Xauthority ☣️
 
 
 Para <span style="color:red">conseguir la escalada de privilegios sigo estos pasos</span>:
@@ -239,7 +225,6 @@ Abro el screenshot y listo ahi se ve la **password**.
 
 
 Por ultimo me dirijo al usuario alex y con las **password** <span style="color:red">cah$mei7rai9A</span> para comvertirme en usuario **root**.
-
 
 
 ![](/assets/images/HTB/writeup-squashed/rootalex.png)
