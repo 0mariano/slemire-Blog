@@ -19,10 +19,11 @@ tags:
   - NFS mount
 ---
 
+<p align="center">
 ![](/assets/images/HTB/writeup-squashed/Squashed.png)
+</p>
     
-    
-    
+       
 ## Introducción 
 
 
