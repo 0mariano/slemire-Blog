@@ -26,14 +26,23 @@ tags:
 
 **INDICE**
 
-1. [Reconocimiento](#reconocimiento).
+1. [Introducción](#Introducción)
+2. [Reconocimiento](#reconocimiento).
     * [Reconocimiento de Puertos](#recon-nmap).
-2. [Puertos](#Puerto2049).
-3. [Escalada de Privilegios .Xauthority](☣️). 
+3. [Puertos](#Puerto2049).
+4. [Escalada de Privilegios .Xauthority](☣️). 
 
 
     
 ***
+
+
+## Introducción {Introducción}
+
+
+"En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario."
+
+
 
 Reconocimiento [](reconocimiento) {#reconocimiento}
 
@@ -238,5 +247,4 @@ Por ultimo me dirijo al usuario alex y con las **password** <span style="color:r
 ![](/assets/images/HTB/writeup-squashed/rootalex.png)
 
 Ya tenemos acceso a la <span style="color:red"> **Flag**
-</span> <span style="color:green"> b51b91e8c62ad3b8d90b75c414b7d143
-</span> 
+
