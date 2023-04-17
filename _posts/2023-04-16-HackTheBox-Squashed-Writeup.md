@@ -1,16 +1,7 @@
 ---
 layout: single
 title: Squashed - Hack The Box
-excerpt: "En esta maquina se toca estos temas:
-
-* Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web)
-
-* Creación de un shell web para obtener acceso al sistema
-
-* Abuso del archivo .Xauthority (Pentesting X11)
-
-* Tomar una captura de pantalla de la pantalla de otro usuario." 
-
+excerpt: "En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario." 
 date: 2023-04-16
 classes: wide
 header:
@@ -28,7 +19,7 @@ tags:
   - NFS mount
 ---
 
-![](/assets/images/Squashed.png)
+![](/assets/images/HTB/writeup-squashed/Squashed.png)
 
 ***
 
@@ -61,7 +52,8 @@ En este caso nos responde y me arroja una **TTL** de 63, por lo que acercarse a 
 | TTL    | Sistema Operativo | 
 | :----- | :------- | 
 | 64     | Linux    | 
-| 128    | Windows  |
+
+
 
 Una vez que ya me comunique con la maquina y extraje el dato que es se trata de una maquina Linux, procedo a desplegar la herramienta Nmap.
 
@@ -245,5 +237,6 @@ Por ultimo me dirijo al usuario alex y con las **password** <span style="color:r
 
 ![](/assets/images/HTB/writeup-squashed/rootalex.png)
 
-Ya tenemos acceso a la <span style="color:green">flag b51b91e8c62ad3b8d90b75c414b7d143
+Ya tenemos acceso a la <span style="color:red"> **Flag**
+</span> <span style="color:green"> b51b91e8c62ad3b8d90b75c414b7d143
 </span> 
