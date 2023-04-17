@@ -72,7 +72,7 @@ nmap -sC -sV -p22,80,111,2049,39033 10.10.11.191
 ## Puerto 2049 
 
 
-Por lo que veo obtengo esta información, me doy cuenta que hay petisiones **nfs** en el **Puerto 2049**, al ser mi primera maquina de <span style="color:green"> HackTheBox </span>, acudo a <span style="color:red"> HackTricks </span>
+Por lo que veo, obtengo esta información y me doy cuenta que hay petisiones **nfs** en el **Puerto 2049**, al ser mi primera maquina de <span style="color:green"> HackTheBox </span>, acudo a <span style="color:red"> HackTricks </span>
 para saber sobre NFS.
 
 - [Recurso extraido de HackTricks](https://book.hacktricks.xyz/network-services-pentesting/nfs-service-pentesting)
