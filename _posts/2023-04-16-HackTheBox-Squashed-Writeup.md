@@ -37,7 +37,7 @@ tags:
 ***
 
 
-## Introducción [#](Introducción) {#Introducción}
+## Introducción [#](introducción) {#introducción}
 
 
 "En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario."
