@@ -23,8 +23,6 @@ tags:
     
     
     
-    
-    
 ## Introducción 
 
 
