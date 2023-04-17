@@ -136,7 +136,7 @@ Ok no tengo acceso a el, voy a ver que usuario tiene acceso el directorio
 
 ![](/assets/images/HTB/writeup-squashed/usuarioquetieneprivilegio.png)
 
-Ok pensando un poco podria burlar el **user 2017** creando uno en mi maquina 
+Ok pensando un poco podria burlar el **user1** creando uno en mi maquina 
 
 
 ![](/assets/images/HTB/writeup-squashed/directorioswebserver.png)
@@ -240,7 +240,7 @@ Abro el screenshot y listo ahi se ve la **password**
 ![](/assets/images/HTB/writeup-squashed/screenshot.png)
 
 
-Por ultimo me dirijo al usuario alex y con las **password** <span style="color:red">cah$mei7rai9A</span> para comvertirme el **root**
+Por ultimo me dirijo al usuario alex y con las **password** <span style="color:red">cah$mei7rai9A</span> para comvertirme en usuario **root**
 
 
 
