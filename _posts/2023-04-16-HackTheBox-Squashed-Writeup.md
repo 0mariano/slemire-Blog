@@ -37,14 +37,14 @@ tags:
 ***
 
 
-## Introducción {Introducción}
+## Introducción
 
 
 "En esta maquina se toca estos temas: Abusar de los propietarios asignados a los recursos compartidos de NFS mediante la creación de nuevos usuarios en el sistema  (Obtener acceso a la raíz web). Creación de un shell web para obtener acceso al sistema. Abuso del archivo .Xauthority (Pentesting X11). Tomar una captura de pantalla de la pantalla de otro usuario."
 
 
 
-Reconocimiento [](reconocimiento) {#reconocimiento}
+Reconocimiento [#](reconocimiento) {#reconocimiento}
 
 
 
@@ -101,13 +101,13 @@ para saber sobre NFS.
 showmount -e <IP>
 ```
 
-![](/assets/images/HTB/writeup-squashed/shownmount.png)
+![](/assets/images/HTB/writeup-squashed/showmount.png)
 
 Obtengo estos dos directorios:
 
 |  /home/ross  |  /var/www/html  |
 
-Y para montar estos dos directorios, me creo dos directorios llamados **/mnt/ross y /mnt/web_server** en el directorio **/mnt** y luego los monto
+Y para montar estos dos directorios, me creo dos directorios llamados **/mnt/ross** y **/mnt/web_server** en el directorio **/mnt** y luego los monto
 
 
 ```bash
