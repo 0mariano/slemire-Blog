@@ -12,5 +12,5 @@ date: 2023-04-6
 
 Estudiante y entusiasta de la ciberseguridad y de los CTFs, comprometido con el aprendizaje constante.
 Actualmente cursando primer año de carrera en Ciberseguridad donde estoy desarrollando mis conocimientos.
-Además, comparto mi proceso de aprendizaje en un Blog donde publico mis conocimientos adquiridos.
+Además, comparto mi proceso de aprendizaje en este Blog donde publico mis conocimientos adquiridos.
 ¡Siempre estoy dispuesto a aprender más y seguir creciendo en este campo de la Ciberseguridad!
