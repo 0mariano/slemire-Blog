@@ -10,7 +10,7 @@ date: 2023-04-6
 </p>
 
 
-Estudiante y entusiasta de la CiberSeguridad y los CTFs, comprometido con el aprendizaje constante.
-Actualmente cursando el primer año de la carrera de Ciberseguridad donde estoy desarrollando mis conocimientos.
-Además, comparto mi proceso de aprendizaje en este Blog donde publico mis conocimientos adquiridos.
-¡Siempre estoy dispuesto a aprender más y seguir creciendo en este campo de la Ciberseguridad!
+Student and enthusiast of CyberSecurity and CTFs, committed to constant learning.
+Currently studying the first year of the CyberSecurity career where I am developing my knowledge.
+In addition, I share my learning process in this Blog where I publish my acquired knowledge.
+I am always willing to learn more and keep growing in this field of CyberSecurity!
