@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mariano Alfonso"
+  name             : "***Mariano Alfonso***"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "CyberSecurity Student | Pentesting | Ethical Hacking | Red Team | Python"
   location         : "Argentina"
@@ -131,7 +131,7 @@ author:
 # vine             :
 # weibo            :
 # xing             :
- #youtube          : # "https://youtube.com/c/"
+# youtube          : # "https://youtube.com/c/"
 
 
 # Reading Files
