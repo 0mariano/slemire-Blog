@@ -1,0 +1,12 @@
+.author__image {
+  animation: color-transition 5s infinite;
+}
+
+@keyframes color-transition {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
