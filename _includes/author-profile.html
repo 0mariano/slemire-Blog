@@ -12,17 +12,19 @@
       {% endif %}
 
 {% if author.home %}
-  {% if author.home contains "://" %}
-    {% assign author_link = author.home %}
-  {% else %}
-    {% assign author_link = author.home | relative_url %}
+        {% if author.home contains "://" %}
+          {% assign author_link = author.home %}
+        {% else %}
+          {% assign author_link = author.home | relative_url %}
+        {% endif %}
+        <a href="{{ author_link }}">
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        </a>
+      {% else %}
+        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+      {% endif %}
+    </div>
   {% endif %}
-  <a href="{{ author_link }}">
-    <img class="author__image" src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
-  </a>
-{% else %}
-  <img class="author__image" src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
-{% endif %}
 
   <div class="author__content">
     {% if author.home %}
