@@ -107,30 +107,31 @@ author:
   location         : "Argentina"
   email            : "marianoalfonso80@gmail.com"
   linkedin         : "mariano-alfonso-667a60226" #https://www.linkedin.com/in/  # (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
+  PortFolio        : "beacons.ai/mariano.alfonso"
+# uri              :
+# home             : # null (default), "absolute or relative url to link to author home"
+# bitbucket        :
+# codepen          :
+# dribbble         :
+# flickr           :
+# facebook         :
+# foursquare       :
   github           : "0mariano"
-  gitlab           :
-  google_plus      :
-  keybase          : 
-  instagram        :
-  lastfm           :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
+# gitlab           :
+# google_plus      :
+# keybase          : 
+# instagram        :
+# lastfm           :
+# pinterest        :
+# soundcloud       :
+# stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+# steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+# tumblr           :
   twitter          : "MARIANO03_"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+# vine             :
+# weibo            :
+# xing             :
+ #youtube          : # "https://youtube.com/c/"
 
 
 # Reading Files
