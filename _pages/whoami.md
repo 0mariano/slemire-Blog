@@ -1,5 +1,5 @@
 ---
-title: "Whoami"
+title: "Posts by Whoami"
 permalink: /whoami/
 date: 2023-04-6
 ---
