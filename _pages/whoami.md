@@ -6,7 +6,7 @@ date: 2023-04-6
 <br>
 
 <p align="center">
-<img src="/assets/images/Whoami/foto.jpg">
+<img src="/assets/images/whoami/foto.jpg">
 </p>
 
 
