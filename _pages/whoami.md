@@ -1,6 +1,8 @@
 ---
 title: "Posts by Whoami"
 permalink: /whoami/
+layout: whoami
+author_profile: true
 date: 2023-04-6
 ---
 <br>
