@@ -1,6 +1,6 @@
 ---
 title: "Whoami"
-permalink: /Whoami/
+permalink: /whoami/
 date: 2023-04-6
 ---
 <br>
