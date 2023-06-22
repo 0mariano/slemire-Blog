@@ -1,6 +1,6 @@
 ---
-title: "About Me"
-permalink: /aboutme/
+title: "Whoami"
+permalink: /Whoami/
 date: 2023-04-6
 ---
 <br>
