@@ -31,7 +31,7 @@ En esta maquina se toca estos temas: Abusar de los propietarios asignados a los 
 
 
 
-## Reconocimiento de Puertos [🔍]
+## Reconocimiento de Puertos 🔍
 
 Como siempre antes de escanear los puertos con **Nmap** le hacemos un <span style="color:red"> ping </span> a la maquina victima para ver si esta viva y nos responde.
 
