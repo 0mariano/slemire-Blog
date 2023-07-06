@@ -33,20 +33,20 @@ tags:
 
 # **Índice**
 
-1. [Introducción](#introducción).
+1. [Introducción](#introduccion).
 2. [Reconocimiento](#reconocimiento).
   * [Herramienta nmap](#herramienta-nmap).
-3. [Enumeración](#enumeración).
+3. [Enumeración](#enumeracion).
   * [Investigando el sitio web](#investigando-el-sitio-web).
   * [Fuzzing con wfuzz](#fuzzing-con-wfuzz).
-4. [Explotación](#explotación).
+4. [Explotación](#explotacion).
   * [NoSQL Injection](#nosql-injection).
   * [HTML Injection](#html-injection).
   * [Escalada de privilegios](#escalada-de-privilegios).
 
 ---
 
-# Introducción 📄 [#](#introducción) {#introducción}
+# Introducción 📄 [#](#introduccion) {#introduccion}
 El presente documento explica los pasos para resolver la máquina <span style="color:green"> **Stocker** </span> de la plataforma [HackTheBox](https://hackthebox.com).
 Esta vez HTB nos presenta una máquina Linux de nivel fácil, donde contiene una sitio web de compras, si aplicamos fuzzing para escanear y enumerar, nos encontramos con un subdomnio que contiene un panel de login, que  es vulnerable a NoSQL Injection, si la bypassemos no redirije a una tienda, donde podremos aplicar HTML Injection, para obtener  credenciales y poder conectarnos remotamente a la maquina y proceder a la escalada de privilegios.
 
@@ -81,7 +81,7 @@ nmap -p 22 ,80 - sC - sV 10.10.11.196 - oN tarjeted
 
 Vemos que en el puerto 80 intenta redireccionar la conexión al dominio **stocker.htb**, pero no tiene éxito.
 
-# Enumeración 📌 [#](#enumeración) {#enumeración}
+# Enumeración 📌 [#](#enumeracion) {#enumeracion}
 Vamos a tratar de entrar al dominio stocker.htb, para eso hay que modificar el archivo de **/etc/hosts**.
 
 ```bash
@@ -138,7 +138,7 @@ Pero basicamente Express es un Framework para Node.js, donde utiliza Bases de Da
 
 ![](/assets/images/HTB/writeup-stocker/wappalizer.png)
 
-# Explotación 🔥 [#](#explotación) {#explotación}
+# Explotación 🔥 [#](#explotacion) {#explotacion}
 Provemos hacer fuerza bruta con **admin:admin** o **angoose123:angoose123**.
 No tenemos éxito con ninguna posible password.
 
