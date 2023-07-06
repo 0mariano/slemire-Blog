@@ -81,7 +81,7 @@ nmap -p 22 ,80 - sC - sV 10.10.11.196 - oN tarjeted
 
 Vemos que en el puerto 80 intenta redireccionar la conexión al dominio **stocker.htb**, pero no tiene éxito.
 
-# [📌] Enumeración [#](#Enumeración)
+# Enumeración 📌 (#Enumeración)
 Vamos a tratar de entrar al dominio stocker.htb, para eso hay que modificar el archivo de **/etc/hosts**.
 
 ```bash
@@ -94,7 +94,7 @@ nano /etc/hosts
 
 Ahora si queremos acceder al sitio web, podemos hacerlo.
 
-## [🕵️‍♂️] Investigando el sitio web [#](#Investigando-el-sitio-web)
+## Investigando el sitio web 🕵️‍♂️ (#Investigando-el-sitio-web)
 Vamos a investigar un poco...
 
 Si scrooleamos veremos que hay una persona de la empresa que dejo un comentario en el sitio web, se trata
@@ -105,7 +105,7 @@ acordemosno del jefe, que se llama Angoose.
 
 ![](/assets/images/HTB/writeup-stocker/angoose.png)
 
-## [🕵️‍♂️] Fuzzing con wfuzz [#](#Fuzzing-con-wfuzz)
+## Fuzzing con wfuzz 🕵️‍♂️ (#Fuzzing-con-wfuzz)
 Vamos a enumerar y escanear subdominios aplicando fuzzing.
 
 ```bash
@@ -138,7 +138,7 @@ Pero basicamente Express es un Framework para Node.js, donde utiliza Bases de Da
 
 ![](/assets/images/HTB/writeup-stocker/wappalizer.png)
 
-# [🔥] [Explotación] [#](#Explotación)
+# [Explotación] 🔥 (#Explotación)
 Provemos hacer fuerza bruta con **admin:admin** o **angoose123:angoose123**.
 No tenemos éxito con ninguna posible password.
 
@@ -155,7 +155,7 @@ Abrir BurpSuite para interceptar la data y usamos devuelta admin:admin, le damos
 Tiro un error al colocar admin en el user y en el password, para eso usamos el metodo de autenticación que
 sacamos de HackTricks.
 
-## [💉] [NoSQL Injection] [#](#NoSQL-Injection)
+## [NoSQL Injection] 💉 (#NoSQL-Injection)
 Esto lo baypaseeamos de la siguiente manera diciendole que el username y la password no es null, con lo cual
 es cierto por lo tanto nos loguea.
 Cambiamos el **Content-Type:** y agregamos **/json**, luego y colocamos el elemento de la siguiente manera:
@@ -190,7 +190,7 @@ Cargamos el PDF y funciona!!!
 
 ![](/assets/images/HTB/writeup-stocker/mariano-pdf1.png)
 
-## [💉] [HTML Injection] [#](#HTML-Injection)
+## [HTML Injection] 💉 (#HTML-Injection)
 Sacando conclusiones, seguramente podemos inyectar código HTML en el titulo.
 
 ```bash
@@ -225,7 +225,7 @@ buscando un archivo especifico, cuando se implementa Node.js, como el archivo **
 
 Encontramos un password <span style="color:red"> IHeardPasshrasesArePrettySecure </span> que pertenece a una base de datos , precisamente de mongodb.
 
-## [👩‍💻] [Escalada de privilegios] [#](#Escalada-de-privilegios)
+## [Escalada de privilegios] 👩‍💻 (#Escalada-de-privilegios)
 Primero intentemos autenticarnos de forma remota por ssh, usando el user (angoose) que obtuvimos antes.
 
 ```bash
