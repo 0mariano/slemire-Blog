@@ -33,16 +33,16 @@ tags:
 
 # **Índice**
 
-1. [Introducción](#introduccion).
-2. [Reconocimiento](#reconocimiento).
-  * [Herramienta nmap](#herramienta-nmap).
-3. [Enumeración](#enumeracion).
-  * [Investigando el sitio web](#investigando-el-sitio-web).
-  * [Fuzzing con wfuzz](#fuzzing-con-wfuzz).
-4. [Explotación](#explotacion).
-  * [NoSQL Injection](#nosql-injection).
-  * [HTML Injection](#html-injection).
-  * [Escalada de privilegios](#escalada-de-privilegios).
+1. [Introducción](#introduccion)
+2. [Reconocimiento](#reconocimiento)
+  * [Herramienta nmap](#herramienta-nmap)
+3. [Enumeración](#enumeracion)
+  * [Investigando el sitio web](#investigando-el-sitio-web)
+  * [Fuzzing con wfuzz](#fuzzing-con-wfuzz)
+4. [Explotación](#explotacion)
+  * [NoSQL Injection](#nosql-injection)
+  * [HTML Injection](#html-injection)
+  * [Escalada de privilegios](#escalada-de-privilegios)
 
 ---
 
