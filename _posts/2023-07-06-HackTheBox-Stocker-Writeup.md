@@ -73,7 +73,7 @@ Vamos a tirar nmap otra vez, pero ahora vamos a especificar la versión del serv
 ```bash
 # Segundo escaneo con nmap
 --------------------------------------------------------------
-nmap -p 22 ,80 - sC - sV 10.10.11.196 - oN tarjeted
+nmap -p 22,80 -sC -sV 10.10.11.196 -oN tarjeted
 ```
 
 ![](/assets/images/HTB/writeup-stocker/Nmap2.png)
