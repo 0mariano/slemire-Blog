@@ -60,7 +60,7 @@ Lazamos la herramienta nmap para averiguar los puertos y servicios abiertos de l
 ```bash
 # Primer escaneo con nmap
 --------------------------------------------------------------
-nmap -p - -- open -v 10.10.11.196
+nmap -p- --open -v 10.10.11.196
 ```
 
 ![](/assets/images/HTB/writeup-stocker/Nmap1.png)
