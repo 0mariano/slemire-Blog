@@ -111,7 +111,7 @@ Vamos a enumerar y escanear subdominios aplicando fuzzing.
 ```bash
 # Uso wfuzz para enumerar subdominios
 --------------------------------------------------------------
-wfuzz -c -- hc=404 -t200 -w /usr/share/seclists/Discorvery/DNS/subdomains-top1million-110000ker.txt -u http://stocker.htb --hw 12
+wfuzz -c --hc=404 -t200 -w /usr/share/seclists/Discorvery/DNS/subdomains-top1million-110000ker.txt -u http://stocker.htb --hw 12
 ```
 
 ![](/assets/images/HTB/writeup-stocker/wfuzz.png)
