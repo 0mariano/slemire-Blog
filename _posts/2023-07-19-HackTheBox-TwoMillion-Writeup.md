@@ -369,9 +369,9 @@ HTB Godfather
 
 En resumen nos dicen que si podemos actualizar el Sitema Operativo del servidor por hay nuevos CVE que tienen que ver con el Kernel de Linux, habla de un **CVE OverlayFS / FUSE**, investigando un poco,encontre información sobre:
 
--[Informacion de OverlayFS vulnerability DATADOG](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/)
+- [Informacion de OverlayFS vulnerability DATADOG](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/)
 
--[CVE-2023-0386](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0386)
+- [CVE-2023-0386](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0386)
 
 No me pondre a explicar en que consiste la vuln pero si quieres profundizar el tema, te dejo de vuelta el enlace del **blog** de **DATADOG**, aqui que explica detalladamente la vuln [Informacion de OverlayFS vulnerability DATADOG](https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/), pero dice que los sistemas de **Versión del Kernel inferior a 6.2 son vulnerables**, con las distribuciones de **Ubuntu, Debian, Amazon Linux, Red Hat**
 
