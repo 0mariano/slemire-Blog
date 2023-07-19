@@ -23,7 +23,7 @@ tags:
   - OverlayFS Vulnerability
 ---
 
-![](/assets/images/HTB/writeup-TwoMillion/TwoMillion.png)
+![](/assets/images/HTB/writeup-twomillion/TwoMillion.png)
 
 ---
 
