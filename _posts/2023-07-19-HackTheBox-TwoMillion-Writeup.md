@@ -426,7 +426,7 @@ Busquemos la **Flag**
 ![](/assets/images/HTB/writeup-twomillion/root-flag.png)
 
 # Mensaje de agradecimiento 💬 [#](#mensaje-de-agradecimiento) {#mensaje-de-agradecimiento}
-## Thank_you.json 📃 [#](#thank_you.json) {#thank_you.json}
+## Thank_you.json 📃 [#](#thank-you-json) {#thank-you-json}
 
 Hay otro archivo que se llama **thank_you.json**, vamos a ver que contiene.
 
