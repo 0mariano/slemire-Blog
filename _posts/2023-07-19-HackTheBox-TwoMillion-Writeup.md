@@ -439,7 +439,7 @@ Vemos que esta cifrado con **"xor"** y  tenemos la key **"HackTheBox"** y a la p
 
 ![](/assets/images/HTB/writeup-twomillion/message.png)
 
-```bash
+```text
 # Mensaje de agradecimiento
 --------------------------------------------------------------
 Dear HackTheBox Community,
