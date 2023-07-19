@@ -39,7 +39,9 @@ tags:
   * [Obteniendo acceso como admin](#obteniendo-acceso-como-admin)
   * [Shell como www-data](#shell-como-www-data)
   * [Escalada de privilegios](#escalada-de-privilegios)
-5. [Agradecimiento y opinión](#agradecimiento-y-opinion)
+5. [Mensaje de agradecimiento](#mensaje-de-agradecimiento)
+  * [Thank_you.json](#thank_you.json)
+  * [Opinión](#opinion) 
 
 ---
 
@@ -423,6 +425,9 @@ Busquemos la **Flag**
 
 ![](/assets/images/HTB/writeup-twomillion/root-flag.png)
 
+# Mensaje de agradecimiento 💬 [#](#mensaje-de-agradecimiento) {#mensaje-de-agradecimiento}
+## Thank_you.json 📃 [#](#thank_you.json) {#thank_you.json}
+
 Hay otro archivo que se llama **thank_you.json**, vamos a ver que contiene.
 
 ![](/assets/images/HTB/writeup-twomillion/cat-thak_you-json.png)
@@ -457,7 +462,7 @@ With deepest gratitude,
 The HackTheBox Team
 ```
 
-# Agradecimiento y Opinión 💬 [#](#agradecimiento-y-opinion) {#agradecimiento-y-opinion}
+## Opinión 💬 [#](#opinion) {#opinion}
 Esta máquina se toco un **CVE**, y mucho **BurpSuite**, tambien el concepto de la máquina me entretuvo y me gusto ya que me uni a [HackTheBox](https://hackthebox.com) este año 2023 y no tuve la posibilidad de realizar el CTF de invitación, tambien el mensaje de mail, para buscar info de como explotar el CVE y el mensaje de agradecimiento, que me gusto mucho y recalco la primera oración del segundo parrafo y el ultimo parrafo.
 
 **"From the very beginning, HackTheBox has been built upon the belief that knowledge sharing, collaboration, and hands-on experience are fundamental to personal and professional growth"**
