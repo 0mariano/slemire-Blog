@@ -6,7 +6,7 @@ Para conseguir acceso a la máquina, primero debemos completar el HTB Challenge 
 date: 2023-07-19
 classes: wide
 header:
-  teaser: /assets/images/HTB/writeup-TwoMillion/TwoMillion.png
+  teaser: /assets/images/HTB/writeup-twomillion/TwoMillion.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
