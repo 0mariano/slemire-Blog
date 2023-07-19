@@ -40,7 +40,7 @@ tags:
   * [Shell como www-data](#shell-como-www-data)
   * [Escalada de privilegios](#escalada-de-privilegios)
 5. [Mensaje de agradecimiento](#mensaje-de-agradecimiento)
-  * [Thank_you.json](#thank_you.json)
+  * [Thank_you.json](#thank-you-json)
   * [Opinión](#opinion) 
 
 ---
