@@ -58,7 +58,7 @@ Lazamos la herramienta nmap para averiguar los puertos y servicios abiertos.
 nmap -p- --open -v 10.10.11.221 
 ```
 
-![](/assets/images/HTB/writeup-TwoMillion/Nmap1.png)
+![](/assets/images/HTB/writeup-twomillion/Nmap1.png)
 
 Obtenemos dos puertos abiertos, el puerto <span style="color:blue"> 22 </span> que pertence al protocolo **ssh** y el puerto <span style="color:red"> 80 </span> que pertence al protocolo **http**.
 
@@ -70,7 +70,7 @@ Vamos a tirar nmap otra vez, pero ahora vamos a especificar la versión del serv
 nmap -p 22,80 -sC -sV 10.10.11.221 -oN Information
 ```
 
-![](/assets/images/HTB/writeup-TwoMillion/Nmap2.png)
+![](/assets/images/HTB/writeup-twomillion/Nmap2.png)
 
 
 Vemos que en el puerto 80 intenta redireccionar la conexión al dominio **2million.htb**, pero no tiene éxito.
@@ -91,18 +91,18 @@ Ahora si queremos acceder al sitio web, podemos hacerlo.
 ## Investigando el sitio web 🕵️‍♂️ [#](#investigando-el-sitio-web) {#investigando-el-sitio-web}
 Podemos ver la antigua plataforma de [HackTheBox](https://hackthebox.com)
 
-![](/assets/images/HTB/writeup-TwoMillion/2million.htb.png)
+![](/assets/images/HTB/writeup-twomillion/2million.htb.png)
 
 Podemos ver el antiguo sitio de HackTheBox y los apartados de los mismo **abount, FAQ, join, commercial, labs, hall of fame ,login**.
 Nos interesa loguearnos, pero tenemos un problema y es que no tenemos permiso para eso, tampoco no tenemos una cuenta, pero si vamos a <span style="color:green"> join </span> hay directorio <span style="color:pink"> /invite </span>, vamos a mirar por ahi.
 
-![](/assets/images/HTB/writeup-TwoMillion/ir_a_join.png)
+![](/assets/images/HTB/writeup-twomillion/ir_a_join.png)
 
-![](/assets/images/HTB/writeup-TwoMillion/-invite.png)
+![](/assets/images/HTB/writeup-twomillion/-invite.png)
 
 Claro como es la plataforma antigua se trata del CTF que teaniamos que hacer todos para poder registrarnos, mirando el codigo HTML encuentro este directorio **/js/inviteapi.min.js**
 
-![](/assets/images/HTB/writeup-TwoMillion/-js-inviteapi-min-js.png)
+![](/assets/images/HTB/writeup-twomillion/-js-inviteapi-min-js.png)
 
 Si miramos al directorio <span style="color:red"> 2million.htb/js/inviteapi.min.js </span>, encontramos algo interesante:
 
@@ -154,11 +154,11 @@ function verifyInviteCode(code) {
 
 Vemos una función **makeInviteCode**, si lo ejecutamos en la consola, obtenemos información cifrada con **ROT13**
 
-![](/assets/images/HTB/writeup-TwoMillion/makeinvitecodepng.png)
+![](/assets/images/HTB/writeup-twomillion/makeinvitecodepng.png)
 
 [rot13.com](https://rot13.com)
 
-![](/assets/images/HTB/writeup-TwoMillion/decipher.png)
+![](/assets/images/HTB/writeup-twomillion/decipher.png)
 
 Dice que hagamos un **POST** a esa ruta **/api/v1/invite/generate**, para eso usamos curl.
 
@@ -177,11 +177,11 @@ Dice que hagamos un **POST** a esa ruta **/api/v1/invite/generate**, para eso us
 
 Veo que esta en **base64**, para verlo mejor, lo deciframos y lo ingresamos en **/invite**
 
-![](/assets/images/HTB/writeup-TwoMillion/insert-code.png)
+![](/assets/images/HTB/writeup-twomillion/insert-code.png)
 
 Vemos que nos dirije a registrar un usuario.
 
-![](/assets/images/HTB/writeup-TwoMillion/registercode.png) 
+![](/assets/images/HTB/writeup-twomillion/registercode.png) 
 
 Registramos un usuario y accedemos a **/home** , donde solo tenemos acceso a Access, en url seria **/home/access**
     
@@ -191,16 +191,16 @@ Lo mejor sera interceptar la petición con <span style="color:orange"> BurpSuite
     
 El <span style="color:red"> GET </span> de **Conection Pack** dirije a **/api/v1/user/vpn/generate**
 
-![](/assets/images/HTB/writeup-TwoMillion/generate.png)
+![](/assets/images/HTB/writeup-twomillion/generate.png)
 
 El <span style="color:red"> GET </span> de **Regenerate** dirije a **/api/v1/user/vpn/regenerate**
 
-![](/assets/images/HTB/writeup-TwoMillion/regenerate.png)
+![](/assets/images/HTB/writeup-twomillion/regenerate.png)
 
 ## Api ⬜ [#](#api) {#api}
 Podemos probar haciendo una petición a **/api** para ver que sucede.
 
-![](/assets/images/HTB/writeup-TwoMillion/-api.png) 
+![](/assets/images/HTB/writeup-twomillion/-api.png) 
 
 Nos muestra la versión, <span style="color:pink"> v1 </span> y si le realizamos petición a **/api/v1**, obtenemos información de rutas y acciones de la api.
 
@@ -246,43 +246,43 @@ Podemos averiguar si somos admin (spoiler no lo somos) haciendo un <span style="
 
 Primero accedemos a la ruta y nos dice que el **Invalid content type**.
 
-![](/assets/images/HTB/writeup-TwoMillion/put-update.png)
+![](/assets/images/HTB/writeup-twomillion/put-update.png)
 
 Al parecer para representar datos estructurados se nececita <span style="color:blue"> json </span>, colocamos **Content-Type: application/json**
 
-![](/assets/images/HTB/writeup-TwoMillion/content-type.png)
+![](/assets/images/HTB/writeup-twomillion/content-type.png)
 
 Nos dice que indiquemos como parametro un email, usemos el que usamos para registrar nuestra cuenta.
 
 Nos pide un nuevo parametro: **"is_admin"** ,  hay que indicar 0 o 1 si indicas otro parametro, va a decirte que indiques 0 o 1
 
-![](/assets/images/HTB/writeup-TwoMillion/message-is_admin.png)
+![](/assets/images/HTB/writeup-twomillion/message-is_admin.png)
 
-![](/assets/images/HTB/writeup-TwoMillion/is_admin_1.png)
+![](/assets/images/HTB/writeup-twomillion/is_admin_1.png)
 
 Al parecer funciona.
 
-![](/assets/images/HTB/writeup-TwoMillion/login-en-burpsuite.png)
+![](/assets/images/HTB/writeup-twomillion/login-en-burpsuite.png)
 
 Ahora verifiquemos si somos admin, haciendo <span style="color:Coral"> GET </span> a **/api/v1/admin/auth**
 
-![](/assets/images/HTB/writeup-TwoMillion/true-auth.png)
+![](/assets/images/HTB/writeup-twomillion/true-auth.png)
 
 Nos reporta <span style="color:orange"> true </span>, por lo tanto somos admin.
 
 Ahora probemos con un **POST** a **/api/v1/admin/vpn/generate**
 
-![](/assets/images/HTB/writeup-TwoMillion/post-vpn.png)
+![](/assets/images/HTB/writeup-twomillion/post-vpn.png)
 
 Nos pide de vuelta el **username** para generar la VPN, tal y como lo hace HackTheBox.
 
-![](/assets/images/HTB/writeup-TwoMillion/username-2twomillion.png)
+![](/assets/images/HTB/writeup-twomillion/username-2twomillion.png)
 
 ## Shell como www-data ⌨️ [#](#shell-como-www-data) {#shell-como-www-data}
 
 Probablemente este campo de username sea vulnerable, intentemos inyetando comandos, para eso hay que agregar una **;** para dividirlo con el usuario, ingresamos el comando **whoami**, despues hay que un **#** para comentar luego.
 
-![](/assets/images/HTB/writeup-TwoMillion/inyect-code-malicious.png)
+![](/assets/images/HTB/writeup-twomillion/inyect-code-malicious.png)
 
 Vamos que funciona, ahora lo bueno es poder hacer una Reverse Shell.
 
@@ -292,7 +292,7 @@ Vamos que funciona, ahora lo bueno es poder hacer una Reverse Shell.
 nc -nlvp 8002
 ```
 
-![](/assets/images/HTB/writeup-TwoMillion/rshell.png)
+![](/assets/images/HTB/writeup-twomillion/rshell.png)
 
 Listo, antes de continuar hacemos un tratamiento a la **tty**.
 
@@ -311,7 +311,7 @@ export SHELL=bash
 
 Si listamos detalladamente el contenido de un directorio, encontramos un archivo <span style="color:red"> .env </span>, que suele contener variables de entorno como claves de API, credenciales de base de datos, contraseñas, tokens de acceso, rutas de archivos.
 
-![](/assets/images/HTB/writeup-TwoMillion/-env.png)
+![](/assets/images/HTB/writeup-twomillion/-env.png)
 
 Entonces miremos por ahi.
 
@@ -321,7 +321,7 @@ Entonces miremos por ahi.
 cat .env
 ```
 
-![](/assets/images/HTB/writeup-TwoMillion/user-pass.png)
+![](/assets/images/HTB/writeup-twomillion/user-pass.png)
 
 Vemos un user y una password, lo usaremos para conectarnos por **ssh**.
 
@@ -335,17 +335,17 @@ SuperDuperPass123
 
 Listamos contenido del directorio y encontramos la **flag** de usuario.
 
-![](/assets/images/HTB/writeup-TwoMillion/user-flag.png)
+![](/assets/images/HTB/writeup-twomillion/user-flag.png)
 
 ## Escalada de privilegios 👩‍💻 [#](#escalada-de-privilegios) {#escalada-de-privilegios}
 
 Si buscamos directorios desde raiz, encontramos el directorio **/var**, miremos ahi.
 
-![](/assets/images/HTB/writeup-TwoMillion/admin-var.png)
+![](/assets/images/HTB/writeup-twomillion/admin-var.png)
 
 Si entramos vemos otro directorio interesante **/mail**.
 
-![](/assets/images/HTB/writeup-TwoMillion/admin-email.png)
+![](/assets/images/HTB/writeup-twomillion/admin-email.png)
 
 Vemos un correo que nos dice.
 
@@ -379,13 +379,13 @@ Entonces comprobemos que versión y que distribución tiene la máquina victima.
 
 Comando **uname -a** para proporcinar info del Kernel.
 
-![](/assets/images/HTB/writeup-TwoMillion/uname-a.png)
+![](/assets/images/HTB/writeup-twomillion/uname-a.png)
 
 Vemos que tiene una versión **5.15.70**, es inferior a la versión de 6.2, bien miremos ahora cual es la distro de la máquina.
 
 Comando **lsb_release -a** para  mostrar info de la distribución de Linux.
 
-![](/assets/images/HTB/writeup-TwoMillion/lsb-release-a.png)
+![](/assets/images/HTB/writeup-twomillion/lsb-release-a.png)
 
 La máquina tiene distribución **Ubuntu**, entonces es vulnerable.
 
@@ -393,9 +393,9 @@ Buscando como explotar la vuln, encontre este repositorio: [xkaneiki / CVE-2023-
 
 Descargamos el repositorio, lo descomprimimos y seguimos los pasos.
 
-![](/assets/images/HTB/writeup-TwoMillion/7z.png)
+![](/assets/images/HTB/writeup-twomillion/7z.png)
 
-![](/assets/images/HTB/writeup-TwoMillion/ls-cve.png)
+![](/assets/images/HTB/writeup-twomillion/ls-cve.png)
 
 ```bash
 # Ejecutamos el comando make all
@@ -405,39 +405,39 @@ make all
 
 Nos genera **tres binarios**, hay que pasarlos a la máquina victima, iniciamos un server en python3 por el puerto **80**.
 
-![](/assets/images/HTB/writeup-TwoMillion/python3.png)
+![](/assets/images/HTB/writeup-twomillion/python3.png)
 
 Damos permisos de ejecución a los archivos y luego ejecutamos lo siguiente **./fuse ./ovlcap/lower ./gc**
 
-![](/assets/images/HTB/writeup-TwoMillion/chmod.png)
+![](/assets/images/HTB/writeup-twomillion/chmod.png)
 
 Ok ahora dejamos esa terminal y nos vamos a otra, nos conectamos de vuelta por ssh y ejecutamos el siguiente comando **./exp**
 
-![](/assets/images/HTB/writeup-TwoMillion/-exp.png)
+![](/assets/images/HTB/writeup-twomillion/-exp.png)
 
 Y somos root.
 
-![](/assets/images/HTB/writeup-TwoMillion/root.png)
+![](/assets/images/HTB/writeup-twomillion/root.png)
 
 Busquemos la **Flag**
 
-![](/assets/images/HTB/writeup-TwoMillion/root-flag.png)
+![](/assets/images/HTB/writeup-twomillion/root-flag.png)
 
 Hay otro archivo que se llama **thank_you.json**, vamos a ver que contiene.
 
-![](/assets/images/HTB/writeup-TwoMillion/cat-thak_you-json.png)
+![](/assets/images/HTB/writeup-twomillion/cat-thak_you-json.png)
 
 Esta encoding con **"url"**, usamos [CyberChef](https://cyberchef.org).
 
-![](/assets/images/HTB/writeup-TwoMillion/encoding-url.png)
+![](/assets/images/HTB/writeup-twomillion/encoding-url.png)
 
 El resultado dice que esta encoding en **"hex"**.
 
-![](/assets/images/HTB/writeup-TwoMillion/encoding-hex.png)
+![](/assets/images/HTB/writeup-twomillion/encoding-hex.png)
 
 Vemos que esta cifrado con **"xor"** y  tenemos la key **"HackTheBox"** y a la par esta encoding en **"base64"**
 
-![](/assets/images/HTB/writeup-TwoMillion/message.png)
+![](/assets/images/HTB/writeup-twomillion/message.png)
 
 ```bash
 # Mensaje de agradecimiento
