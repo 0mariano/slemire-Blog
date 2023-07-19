@@ -264,7 +264,7 @@ Al parecer funciona.
 
 ![](/assets/images/HTB/writeup-twomillion/login-en-burpsuite.png)
 
-Ahora verifiquemos si somos admin, haciendo <span style="color:Coral"> GET </span> a **/api/v1/admin/auth**
+Ahora verifiquemos si somos admin, haciendo <span style="color:orange"> GET </span> a **/api/v1/admin/auth**
 
 ![](/assets/images/HTB/writeup-twomillion/true-auth.png)
 
