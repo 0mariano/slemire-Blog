@@ -349,7 +349,7 @@ Si entramos vemos otro directorio interesante **/mail**.
 
 Vemos un correo que nos dice.
 
-```bash
+```text
 # E-mail
 --------------------------------------------------------------
 From: ch4p <ch4p@2million.htb>
