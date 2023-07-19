@@ -421,7 +421,7 @@ Y somos root.
 
 ![](/assets/images/HTB/writeup-twomillion/root.png)
 
-Busquemos la **Flag**
+Busquemos la **Flag**.
 
 ![](/assets/images/HTB/writeup-twomillion/root-flag.png)
 
