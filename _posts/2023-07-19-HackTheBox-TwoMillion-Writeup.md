@@ -89,7 +89,7 @@ nano /etc/hosts
 Ahora si queremos acceder al sitio web, podemos hacerlo.
 
 ## Investigando el sitio web 🕵️‍♂️ [#](#investigando-el-sitio-web) {#investigando-el-sitio-web}
-Podemos ver la antigua plataforma de [HackTheBox](https://hackthebox.com)
+Podemos ver la antigua plataforma de [HackTheBox](https://hackthebox.com).
 
 ![](/assets/images/HTB/writeup-twomillion/2million.htb.png)
 
@@ -152,7 +152,7 @@ function verifyInviteCode(code) {
         }
 ```
 
-Vemos una función **makeInviteCode**, si lo ejecutamos en la consola, obtenemos información cifrada con **ROT13**
+Vemos una función **makeInviteCode**, si lo ejecutamos en la consola, obtenemos información cifrada con **ROT13**.
 
 ![](/assets/images/HTB/writeup-twomillion/makeinvitecodepng.png)
 
@@ -326,7 +326,7 @@ cat .env
 Vemos un user y una password, lo usaremos para conectarnos por **ssh**.
 
 ```bash
-# Conexición por ssh, usando usuario y password que encontramos en el archivo .env
+# Conexición por ssh usando usuario y password que encontramos en el archivo .env
 --------------------------------------------------------------
 shh admin@10.10.11.221
 
