@@ -241,7 +241,7 @@ Nos muestra la versión, <span style="color:pink"> v1 </span> y si le realizamos
 }
 ```
 # Explotación 🔥 [#](#explotacion) {#explotacion}
-## Obteniendo acceso como admin 👨‍💼 [#](#Obteniendo-acceso-como-admin) {#Obteniendo-acceso-como-admin}
+## Obteniendo acceso como admin 👨‍💼 [#](#obteniendo-acceso-como-admin) {#obteniendo-acceso-como-admin}
 Podemos averiguar si somos admin (spoiler no lo somos) haciendo un <span style="color:violet"> GET </span> a **/api/v1/admin/auth** , por lo tanto podemos jugar un poco cambiando la configuración haciendo un <span style="color:pink"> PUT </span> a **/api/v1/admin/settings/update**
 
 Primero accedemos a la ruta y nos dice que el **Invalid content type**.
