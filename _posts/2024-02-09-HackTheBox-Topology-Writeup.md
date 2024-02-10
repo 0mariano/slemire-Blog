@@ -5,7 +5,7 @@ excerpt: "Topology se trata de una máquina basada en el Sistema Operativo Linux
 date: 2024-02-09
 classes: wide
 header:
-  teaser: /assets/images/HTB/writeup-topology/Topology.png
+  teaser: /assets/images/HTB/writeup-topology/topology.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
