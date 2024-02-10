@@ -23,7 +23,7 @@ description              : "Articles on CyberSecurity, CTFs and Investigations"
 url                      : "https://0mariano.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "0mariano/0mariano.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-logo                     : "<div style='text-align:center'><img src='/assets/images/maa.png' alt='Logo'></div>"
+logo                     : "/assets/images/maa.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
