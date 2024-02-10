@@ -350,10 +350,10 @@ Esta máquina resultó muy entretenida, ideal para aquellos que recién comienza
 
 # Apéndice I Links de Referencia 📎​ [#](#apendice-i-links-de-referencia) {#apendice-i-links-de-referencia}
 ## Herramientas Utilizadas en la Auditoria 🛠️​ [#](#herramientas-utilizadas-en-la-auditoria) {#herramientas-utilizadas-en-la-auditoria}
-* [Nmap:](https://nmap.org) - [https://nmap.org](https://nmap.org) - [https://www.kali.org/tools/nmap](https://www.kali.org/tools/nmap) ---> Uso de nmap para el escaneo de puertos.
-* [John the Ripper:](https://www.openwall.com/john) - [https://www.openwall.com/john](https://www.openwall.com/john) - [https://www.kali.org/tools/john](https://www.kali.org/tools/john) - [https://github.com/openwall/john](https://github.com/openwall/john) ---> Uso de John the Ripper para descifrar contraseña.
-* [pspy - unprivileged Linux process snooping:](https://github.com/DominicBreuker/pspy) - [https://github.com/DominicBreuker/pspy](https://github.com/DominicBreuker/pspy) ---> Uso de pspy para monitorear procesos.
+* [Nmap:](https://nmap.org)[https://nmap.org](https://nmap.org) - [https://www.kali.org/tools/nmap](https://www.kali.org/tools/nmap) ---> Uso de nmap para el escaneo de puertos.
+* [John the Ripper:](https://www.openwall.com/john)[https://www.openwall.com/john](https://www.openwall.com/john) - [https://www.kali.org/tools/john](https://www.kali.org/tools/john)[https://github.com/openwall/john](https://github.com/openwall/john) ---> Uso de John the Ripper para descifrar contraseña.
+* [pspy - unprivileged Linux process snooping:](https://github.com/DominicBreuker/pspy)[https://github.com/DominicBreuker/pspy](https://github.com/DominicBreuker/pspy) ---> Uso de pspy para monitorear procesos.
 
 ## Documentación ​📰​​ [#](#documentacion) {#documentacion}
-* [HackTricks: LaTeX Injection](https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection) - [https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection](https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection) 
-* [Gnuplot Privilege Escalation:](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation) - [https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation)
+* [HackTricks: LaTeX Injection](https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection)[https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection](https://book.hacktricks.xyz/pentesting-web/formula-csv-doc-latex-ghostscript-injection) 
+* [Gnuplot Privilege Escalation:](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation)[https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation](https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/gnuplot-privilege-escalation)
