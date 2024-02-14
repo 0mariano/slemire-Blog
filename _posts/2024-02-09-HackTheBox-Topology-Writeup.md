@@ -36,7 +36,7 @@ tags:
 2. [Reconocimiento - Enumeración](#reconocimiento-enumeracion)
   * [Uso de la Herramienta Nmap](#uso-de-la-herramienta-nmap)
   * [Aplicación Web](#aplicacion-web)
-3. [ Análisis de Vulnerabilidades](#analisis-de-vulnerabilidades)
+3. [Análisis de Vulnerabilidades](#analisis-de-vulnerabilidades)
   * [Local File Inlcusion (LFI) via LaTeX Injection](#local-file-inlcusion-lfi-via-latex-injection)
 4. [Explotación](#explotacion)
   * [Enumeración de Archivos del Sistema](#enumeracion-de-archivos-del-sistema)
