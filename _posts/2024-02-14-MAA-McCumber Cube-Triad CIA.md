@@ -2,7 +2,7 @@
 layout: single
 title: McCumber Cube and Triad CIA - Basic concepts of CyberSecurity 
 excerpt: "En este artículo, nos adentraremos en dos pilares fundamentales del campo de la seguridad informática: la Triada CIA y el Cubo de McCumber. Estos conceptos son esenciales para comprender cómo proteger la información y los sistemas contra amenazas y ataques. El objetivo de este artículo es proporcionar una comprensión básica de estos conceptos fundamentales para aquellos que están iniciando en el mundo de la seguridad informática o seguridad de la información."
-date: 2024-02-15
+date: 2024-02-14
 classes: wide
 header:
   teaser: /assets/images/articles/Cuber-McCumber-Triad-CIA/cube-cia.png
