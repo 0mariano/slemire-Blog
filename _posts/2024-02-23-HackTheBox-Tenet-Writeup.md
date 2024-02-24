@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Tenet - Hack The Box
-excerpt: "Tenet es una máquina de nivel medio con Sistema Operativo Linux, que contiene un servidor web Apache que aloja un Wordpress. El acceso al sistema se logra mediante la explotación de una vulnerabilidad insecure deserialisation. Una vez dentro, se logra obtener credenciales de una base de datos, lo que permite la migración a un usuario con mayores privilegios. Finalmente, se descubre que aprovechando una vulnerabilidad de race condition, un script bash con permisos de root, ejecutable mediante sudo, facilita la escalada de privilegios al permitir la escritura de claves SSH propias."
+excerpt: "Tenet es una máquina de nivel medio con Sistema Operativo Linux, que contiene un servidor web Apache que aloja un Wordpress. El acceso al sistema se logra mediante la explotación de una vulnerabilidad insecure deserialization. Una vez dentro, se logra obtener credenciales de una base de datos, lo que permite la migración a un usuario con mayores privilegios. Finalmente, se descubre que aprovechando una vulnerabilidad de race condition, un script bash con permisos de root, ejecutable mediante sudo, facilita la escalada de privilegios al permitir la escritura de claves SSH propias."
 date: 2024-02-23
 classes: wide
 header:
@@ -17,7 +17,7 @@ tags:
   - Linux
   - WordPress
   - Information Disclosure
-  - Insecure deserialization
+  - Insecure Deserialization
   - Race Condition
   - SSH Key
 ---
