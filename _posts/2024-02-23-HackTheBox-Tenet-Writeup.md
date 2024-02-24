@@ -22,7 +22,7 @@ tags:
   - SSH Key
 ---
 
-![](/assets/images/HTB/writeup-tenet/tenet.png)
+![](/assets/images/HTB/writeup-tenet/Tenet.png)
 
 [Download Write-Up](https://github.com/0mariano/0mariano.github.io/blob/master/PDFs%20and%20tex/Write-Up/MAA-Write-Up-Tenet.pdf)
 
