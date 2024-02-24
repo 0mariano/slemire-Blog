@@ -57,7 +57,7 @@ tags:
 
 # Introducción 📄 [#](#introduccion) {#introduccion}
 En el presente Write Up explicare los pasos para resolver la máquina <a href="https://app.hackthebox.com/machines/Tenet" style="color:orange"><strong>**Tenet**</strong></a> de la plataforma [HackTheBox](https://hackthebox.com).
-Tenet es una máquina de nivel medio con Sistema Operativo Linux, que contiene un servidor web Apache que aloja un Wordpress. El acceso al sistema se logra mediante la explotación de una vulnerabilidad insecure deserialisation. Una vez dentro, se logra obtener credenciales de una base de datos, lo que permite la migración a un usuario con mayores privilegios. Finalmente, se descubre que aprovechando una vulnerabilidad de race condition, un script bash con permisos de root, ejecutable mediante sudo, facilita la escalada de privilegios al permitir la escritura de claves SSH propias.
+Tenet es una máquina de nivel medio con Sistema Operativo Linux, que contiene un servidor web Apache que aloja un Wordpress. El acceso al sistema se logra mediante la explotación de una vulnerabilidad insecure deserialization. Una vez dentro, se logra obtener credenciales de una base de datos, lo que permite la migración a un usuario con mayores privilegios. Finalmente, se descubre que aprovechando una vulnerabilidad de race condition, un script bash con permisos de root, ejecutable mediante sudo, facilita la escalada de privilegios al permitir la escritura de claves SSH propias.
 
 ## Scope 🎯 [#](#scope) {#scope}
 El scope de esta máquina fue definida como la siguiente.
