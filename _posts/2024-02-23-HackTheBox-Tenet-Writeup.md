@@ -16,8 +16,8 @@ tags:
   - Pentesting
   - Linux
   - WordPress
-  - Information Disclousure
-  - Insecure Deserialisation
+  - Information Disclosure
+  - Insecure deserialization
   - Race Condition
   - SSH Key
 ---
