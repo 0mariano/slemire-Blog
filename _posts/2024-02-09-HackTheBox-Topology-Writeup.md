@@ -186,7 +186,7 @@ Como resultado genera la imagen del archivo **/etc/passwd**
   <img src="/assets/images/HTB/writeup-topology/Latex-Injection_2_Resultado.png" alt="Archivo /etc/passwd">
 </div>
 
-## Explotación 💣​ [#](#explotacion) {#explotacion}
+# Explotación 💣​ [#](#explotacion) {#explotacion}
 ## Enumeración de Archivos del Sistema 📌​ [#](#enumeracion-de-archivos-del-sistema) {#enumeracion-de-archivos-del-sistema}
 Al obtener lectura del archivo, se confirma que la aplicación web es vulnerable a **Local File Inclusion** via **LaTeX Injection**.
 
