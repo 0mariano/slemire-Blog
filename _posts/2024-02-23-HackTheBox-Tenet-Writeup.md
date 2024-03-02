@@ -284,7 +284,7 @@ Bien, ustedes podrían preguntar: ¿Pero Marian, qué tiene que ver esto con la 
 
 En consecuencia, este código es vulnerable a **insecure deserialization**.
 
-## Explotación 💣​ [#](#explotacion) {#explotacion}
+# Explotación 💣​ [#](#explotacion) {#explotacion}
 ## Remote Code Execution (RCE) - via Insecure Deserialization ​👨‍💻​🔄🔓 [#](#remote-code-execution-rce-via-insecure-deserialization) {#remote-code-execution-rce-via-insecure-deserialization}
 Entonces se me ocurrió crear un script para explotar esta vulnerabilidad, mediante variables públicas, creamos un archivo php que contenga datos serializados. Esta data sería una llamada al sistema con el parámetro **cmd**, lo que me permitiría ejecutar cualquier comando, por eso no utilizo el 
 
