@@ -537,7 +537,7 @@ La máquina resultó bastante sencilla para obtener una reverse shell, pero lueg
 * [Gobuster:](https://www.kali.org/tools/gobuster) [https://www.kali.org/tools/gobuster](https://www.kali.org/tools/gobuster) → Uso de gobuster para enumerar directorios. 
 * [Wappalyzer:](https://www.wappalyzer.com) [https://www.wappalyzer.com](https://www.wappalyzer.com) →  Uso de wappalyzer para enumerar tecnologias.
 * [Wfuzz:](https://www.kali.org/tools/wfuzz) [https://www.kali.org/tools/wfuzz](https://www.kali.org/tools/wfuzz) → Uso de wfuzz para realizar fuzzing de extensiónes.
-* [CyberChef:](https://gchq.github.io/CyberChef) [https://www.kali.org/tools/wfuzz](https://www.kali.org/tools/wfuzz) → Uso de CyberChef para encodear en URL la revshell.
+* [CyberChef:](https://gchq.github.io/CyberChef) [https://gchq.github.io/CyberChef](https://gchq.github.io/CyberChef) → Uso de CyberChef para encodear en URL la revshell.
 * [BurpSuite Community Edition:](https://portswigger.net/burp/communitydownload ) [https://portswigger.net/burp/communitydownload](https://portswigger.net/burp/communitydownload) → Uso de BurpSuite para interceptar peticiones.
 
 ## Documentación ​📰​​ [#](#documentacion) {#documentacion}
