@@ -184,7 +184,7 @@ Bien si lo aplicamos y le damos send vemos que funciona, es decir se aplica el f
 
 Bueno, sabemos que ocurre un directory listing. Como vimos anteriormente, se listó el contenido del directorio anterior. Por ende, el componente **http://10.129.229.141/dirRead.php** es vulnerable a directory listing.
 
-## Local File Inlcusion (LFI) via Filter Bypass 📑​🛡️​ [#](#directory-listing-via-filter-bypass) {#directory-listing-via-filter-bypass}
+## Local File Inlcusion (LFI) via Filter Bypass 📑​🛡️​ [#](#local-file-inclusion-lfi-via-filter-bypass) {#local-file-inclusion-lfi-via-filter-bypass}
 Ahora que sabemos que la página es vulnerable a directory listing, vamos a por la otra petición <span style="color:red"> /fileRead.php </span>
 
 Jujuju vemos lo mismo pero en vez de la variable path vemos la variable **file**. Lo curioso y, por sobre todo importante ocurre en la respuesta, se ve el contenido de la list1 y lo que me lleva a sospechar que está ocurriendo un Local File Inlcusion (LFI). 
