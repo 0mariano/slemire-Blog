@@ -5,7 +5,7 @@ excerpt: "Para obtener acceso a la máquina, debemos obtener las claves privadas
 date: 2024-03-04
 classes: wide
 header:
-  teaser: /assets/images/HTB/writeup-waldo/waldo.png
+  teaser: /assets/images/HTB/writeup-waldo/Waldo.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -22,7 +22,7 @@ tags:
   - Priesc Capabilities
 ---
 
-![](/assets/images/HTB/writeup-waldo/waldo.png)
+![](/assets/images/HTB/writeup-waldo/Waldo.png)
 
 [Download Write-Up](https://github.com/0mariano/0mariano.github.io/blob/master/PDFs%20and%20tex/Write-Up/MAA-Write-Up-Waldo.pdf)
 
