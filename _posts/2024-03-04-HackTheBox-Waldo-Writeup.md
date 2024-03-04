@@ -296,7 +296,7 @@ Vamos a separar mejor el salto de línea.
 
 Por favor, nunca compartan su clave privada de SSH, la clave privada tiene que ser conocida solamente por ustedes.
 
-## Conexion a la Máquina via SSH 🖥️🔒 [#](#conexion-a-la-máquina-via-ssh) {#conexion-a-la-máquina-via-ssh}
+## Conexion a la Máquina via SSH 🖥️🔒 [#](#conexion-a-la-maquina-via-ssh) {#conexion-a-la-maquina-via-ssh}
 Ya que el puerto 22 está abierto, utilizaremos esta clave privada para conectarnos por **SSH** como usuario **nobody**.
 
 Para utilizar esta clave privada, crearé un archivo en mi máquina atacante y lo llamaré **key_private**. Le daré permisos para que el propietario tenga permisos de lectura y escritura (valor **"6"**), mientras que el grupo al que pertenece el archivo, así como cualquier otro usuario en el sistema, no tendrán ningún permiso sobre el archivo (valor **"0"**). Por último, nos conectamos por SSH y ya tenemos acceso a la primera flag, la flag del usuario.
