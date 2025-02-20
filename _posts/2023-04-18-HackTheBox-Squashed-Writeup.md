@@ -173,7 +173,7 @@ Para <span style="color:red">conseguir la escalada de privilegios sigo estos pas
 
 * Primero me creo otro usuario para tener acceso al archivo .Xauthority.
 
-* Pero no tegno acceso al archivo. 
+* Pero no tengo acceso al archivo. 
 
 
 ![](/assets/images/HTB/writeup-squashed/usuarioquetieneprivilegio.png)
@@ -228,8 +228,4 @@ Por ultimo me dirijo al usuario alex y con las **password** <span style="color:r
 
 ![](/assets/images/HTB/writeup-squashed/rootalex.png)
 
-Ya tenemos acceso a la <span style="color:red"> **Flag**.
-  
-  
-  
-
+Ya tenemos acceso a la <span style="color:red"> **Flag**.</span>
