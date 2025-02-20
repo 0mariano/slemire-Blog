@@ -113,7 +113,7 @@ Si miramos al directorio <span style="color:red"> 2million.htb/js/inviteapi.min.
 --------------------------------------------------------------
 eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 i(4){h 8={"4":4};$.9({a:"7",5:"6",g:8,b:\'/d/e/n\',c:1(0){3.2(0)},f:1(0){3.2(0)}})}1 j(){$.9({a:"7",5:"6",b:\'/d/e/k/l/m\',c:1(0){3.2(0)},f:1(0){3.2(0)}})}',24,24,'response|function|log|console|code|dataType|json|POST|formData|ajax|type|url|success|api/v1|invite|error|data|var|verifyInviteCode|makeInviteCode|how|to|generate|verify'.split('|'),0,{}))
 ```
-Es coódigo <span style="color:yellow"> JS </span> y esta ofuscado, asi que usare la herramienta  [beautifier.io](https://beautifier.io)
+Es código <span style="color:yellow"> JS </span> y esta ofuscado, asi que usare la herramienta  [beautifier.io](https://beautifier.io)
 
 Obtenemos este código legible:
 
