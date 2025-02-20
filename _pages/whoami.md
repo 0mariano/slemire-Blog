@@ -11,7 +11,10 @@ date: 2023-04-6
 
 
 
-**CyberSecurity Student and CTFs Player**, comprometido con el aprendizaje constante.
-**Actualmente cursando el segundo año** de la carrera Tec. Universitaria en Ciberseguridad donde estoy adquiriendo y desarrollando mis conocimientos.
-Además, comparto mi proceso de aprendizaje en mi [**Blog**](https://0mariano.github.io) donde publico mis conocimientos adquiridos en  **Write-Ups** de **CTFs**.
-¡Siempre estaré dispuesto a adquirir nuevos conocimientos que me ayuden a aprender en el  campo de la Ciberseguridad!
+CyberSecurity Student y CTFs Player, comprometido con el aprendizaje constante.
+
+Actualmente cursando Tercer Año de la carrera Tecnicatura Universitaria en Ciberseguridad donde estoy adquiriendo y desarrollando mis conocimientos.
+
+Además, comparto mi proceso de aprendizaje en mi Blog donde publico mis conocimientos adquiridos en Write-Ups de CTFs.
+
+Siempre estaré dispuesto a adquirir nuevos conocimientos que me ayuden a aprender en el campo de la Ciberseguridad!
